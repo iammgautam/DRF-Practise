@@ -1,7 +1,7 @@
 from rest_framework import viewsets
-from .models import Employee
+from .models import Users
 from . import serializers
 
-class EmployeeViewset(viewsets.ModelViewSet):
-    queryset = Employee.objects.all()
-    serializer_class = serializers.EmployeeSerializers
+class UserViewset(viewsets.ModelViewSet):
+    queryset = Users.objects.all()
+    serializer_class = serializers.UserSerializers
